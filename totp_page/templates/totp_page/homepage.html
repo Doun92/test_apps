@@ -1,4 +1,4 @@
-!{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,6 +7,9 @@
     <title>TOTP Page</title>
 </head>
 <body>
-
+    <h1>TOTP Page</h1>
+    {% for totp in list_totps %}
+        {{totp.federation}}
+    {% endfor %}
 </body>
 </html>
